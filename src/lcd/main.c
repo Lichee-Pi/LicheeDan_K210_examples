@@ -70,7 +70,7 @@ int main(void)
         lcd_clear(RED);
         lcd_draw_picture(0, 0, 240, 160, g_lcd_gram);
         lcd_draw_string(16, 40, "Canaan", RED);
-        lcd_draw_string(16, 80, "Kendryte K210", BLUE);
+        lcd_draw_string(16, 80, "Kendryte K210 on Sipeed M1", BLUE);
     }
     while (1)
         ;
