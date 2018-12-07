@@ -1,10 +1,11 @@
 LicheeDan_K210_examples
 ======
-use Kendryte K210 standalone SDK commitid d13b38098a3598b0018c38590387e43953efd140
+use Kendryte K210 standalone SDK commitid d13b38098a3598b0018c38590387e43953efd140  
+and should use gcc-8.2, you can download at https://kendryte.com/downloads/]
 
 kendryte offical standalone sdk demo
 ======
-you can find it by https://github.com/kendryte/kendryte-standalone-demo.git
+you can find it by https://github.com/kendryte/kendryte-standalone-demo.git  
 but i did not test it on sipeed board. so you must test it by yourself. 
 
 demo instruction
