@@ -2,6 +2,12 @@ LicheeDan_K210_examples
 ======
 use Kendryte K210 standalone SDK commitid d13b38098a3598b0018c38590387e43953efd140
 
+demo instruction
+======
+##### hello_world -- uart output hello_world
+##### lcd -- lcd display
+##### dvp_ov -- dvp output to lcd
+
 Kendryte K210 standalone SDK
 ======
 

@@ -12,22 +12,30 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#include <stdio.h>
-#include "bsp.h"
+#ifndef _OV5640_H
+#define _OV5640_H
 
-int core1_function(void *ctx)
-{
-    uint64_t core = current_coreid();
-    printf("Core %ld Hello world\n", core);
-    while (1)
-        ;
-}
+#include <stdint.h>
 
-int main()
-{
-    uint64_t core = current_coreid();
-    printf("Core %ld Hello world\n", core);
-    register_core1(core1_function, NULL);
-    while (1)
-        ;
-}
+#define OV5640_ID           0X5640
+#define OV5640_ADDR         0X78
+#define OV5640_CHIPIDH      0X300A
+#define OV5640_CHIPIDL      0X300B
+
+#define XSIZE               320
+#define YSIZE               240
+#define LCD_GRAM_ADDRESS    0x60020000
+
+#define QQVGA_160_120       0
+#define QCIF_176_144        1
+#define QVGA_320_240        2
+#define WQVGA_400_240       3
+#define CIF_352_288         4
+
+#define jpeg_buf_size       (30*1024)
+
+uint8_t ov5640_init(void);
+void ov5640_flash_lamp(uint8_t sw);
+
+#endif
+

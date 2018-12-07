@@ -12,22 +12,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#include <stdio.h>
-#include "bsp.h"
+#ifndef _OV2640_H
+#define _OV2640_H
 
-int core1_function(void *ctx)
-{
-    uint64_t core = current_coreid();
-    printf("Core %ld Hello world\n", core);
-    while (1)
-        ;
-}
+#include <stdint.h>
 
-int main()
-{
-    uint64_t core = current_coreid();
-    printf("Core %ld Hello world\n", core);
-    register_core1(core1_function, NULL);
-    while (1)
-        ;
-}
+#define OV2640_ADDR         0x60
+
+int ov2640_init(void);
+int ov2640_read_id(uint16_t *manuf_id, uint16_t *device_id);
+
+#endif /* _OV2640_H */
+
