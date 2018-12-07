@@ -15,6 +15,8 @@ below is tested
 ##### hello_world -- uart output hello_world
 ##### lcd -- lcd display
 ##### dvp_ov -- dvp output to lcd
+##### gpiohs_led -- press key boot change led blue
+##### ai_dmeo_sim -- k210 ai dmeo sim
 
 Kendryte K210 standalone SDK
 ======
