@@ -2,8 +2,16 @@ LicheeDan_K210_examples
 ======
 use Kendryte K210 standalone SDK commitid d13b38098a3598b0018c38590387e43953efd140
 
+kendryte offical standalone sdk demo
+======
+you can find it by https://github.com/kendryte/kendryte-standalone-demo.git
+but i did not test it on sipeed board. so you must test it by yourself. 
+
 demo instruction
 ======
+
+below is tested
+
 ##### hello_world -- uart output hello_world
 ##### lcd -- lcd display
 ##### dvp_ov -- dvp output to lcd
