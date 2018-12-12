@@ -41,7 +41,7 @@ static void init_rst(void)
 
 static void set_rst(uint8_t val)
 {
-    gpiohs_set_pin(DCX_GPIONUM, val);
+    gpiohs_set_pin(RST_GPIONUM, val);
 }
 
 void tft_hard_init(void)
